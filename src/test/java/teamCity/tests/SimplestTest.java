@@ -25,7 +25,7 @@ public class SimplestTest{
 
         logger.info(String.format("Check is %s variable 'result' = 'Pass'", variable));
 
-        Assert.assertEquals(result, "Pass", "You didn't choose Pass for Simplest Test :(");
+        Assert.assertNotEquals(result, "Pass", "You didn't choose Pass for Simplest Test :(");
 
         logger.info("--- Finish Simplest Test ---");
 
